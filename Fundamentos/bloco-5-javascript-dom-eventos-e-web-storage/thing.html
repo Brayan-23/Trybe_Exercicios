@@ -47,15 +47,12 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-    
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-
- Crie uma função que mude a cor do quadrado vermelho para branco.
-
- Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ 01 - Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+ 02 - Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ 03 - Crie uma função que mude a cor do quadrado vermelho para branco.
+ 04 - Crie uma função que corrija o texto da tag <h1>.
+ 05 - Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+ 06 - Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
        //Requisito 01
        function liveFuture (texto){
@@ -71,10 +68,22 @@
        }
        // Exercicio 04
        function correct(){
-           document.getElementsByTagName('h1')[0].innerText = "Exercício 5.1 - JavaScrip"
+           document.getElementsByTagName('h1')[0].innerText = "Exercício 5.1 - JavaScript"
        }
-       correct();
-
+       //Exercicio 05
+       function uppercase(){
+           let upper = document.getElementsByTagName('p')[0];
+           upper.innerHTML = upper.innerHTML.toUpperCase();
+       }
+       //Exercicio 06
+       function allP (){
+           let coisa = document.getElementsByTagName('p')[0].innerHTML;
+           let coisa2 =document.getElementsByTagName('p')[1].innerHTML;
+           let coisa3 =document.getElementsByTagName('p')[2].innerHTML;
+           console.log(coisa)
+           console.log(coisa2)
+           console.log(coisa3)
+       }
     </script>
   </body>
 </html>
