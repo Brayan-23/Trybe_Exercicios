@@ -82,6 +82,25 @@
         let criar5 =document.createElement('section');
         criar5.className = 'right-content';
         criar1.appendChild(criar5);
+        // Requisito 07
+        let criar6 = document.createElement('img');
+        criar6.src = 'https://picsum.photos/200';
+        criar6.className = 'small-image';
+        criar5.appendChild(criar6);
+        // Requisito 08
+        let array = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        let criar7 =document.createElement('ul');
+        criar5.appendChild(criar7);
+        for(let coisa in array){
+            let criarLi = document.createElement('li');
+            criarLi.innerHTML = array[coisa];
+            criar7.appendChild(criarLi);
+        }
+        // Exercicio 09
+        for(i = 0; i < 3; i += 1){
+        let criar8 = document.createElement('h3')
+        criar1.appendChild(criar8);
+        }
     </script>
   </body>
 </html>
