@@ -115,6 +115,18 @@
         // NewReq 04
         let secao1 = document.getElementsByClassName('right-content')[0];
         secao1.style.marginRight = 'auto';
+        // NewReq 05
+        let secao2 = document.getElementsByClassName('center-content')[0];
+        secao2.style.background = 'green';
+        // NewReq 06
+        let order = document.querySelectorAll('ul')[0];
+        let end = document.getElementsByTagName('li');
+        for(let ova = 0; ova < end.length; ova += 1){
+            let adiciona = end[ova];
+            if(adiciona.innerHTML.includes('nove') || adiciona.innerHTML.includes('dez')){
+                order.removeChild(adiciona);
+            }
+            }
         
         
         
