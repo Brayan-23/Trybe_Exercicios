@@ -50,3 +50,31 @@ function createDaysOfTheWeek() {
       caixa.appendChild(criado);
   }
   palavra('Feriados');
+  // Exercicio 03
+  function colorHoliday(){
+  let pegar = document.querySelector('#btn-holiday');
+  let pegar2 = document.getElementsByClassName('holiday');
+  let cor = "rgb(238,238,238)";
+  let novaCor = 'red';
+pegar.addEventListener('click', function (){
+      for(let nova = 0; nova < pegar2.length; nova +=1){
+        let guardar = pegar2[nova];
+        if(guardar.style.backgroundColor === novaCor){
+            guardar.style. backgroundColor = cor;
+        }else{
+            guardar.style.backgroundColor = novaCor;
+        }
+      }
+  });
+  }
+  colorHoliday();
+  // Exercicio 04
+  function newPalavra(sextou){
+    let caixa = document.getElementsByClassName('buttons-container')[0];
+    let criado = document.createElement('button');
+    criado.id = 'btn-friday';
+    criado.innerHTML = sextou;
+    caixa.appendChild(criado);
+}
+newPalavra('Sexta-Feira');
+// Exercicio 05
