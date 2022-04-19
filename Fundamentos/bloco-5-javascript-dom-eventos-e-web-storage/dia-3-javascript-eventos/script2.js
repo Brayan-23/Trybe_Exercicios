@@ -52,7 +52,7 @@ function createDaysOfTheWeek() {
   palavra('Feriados');
   // Exercicio 03
   function colorHoliday(){
-  let pegar = document.querySelector('#btn-holiday');
+  let pegar = document.getElementById('btn-holiday');
   let pegar2 = document.getElementsByClassName('holiday');
   let cor = "rgb(238,238,238)";
   let novaCor = 'red';
@@ -78,3 +78,37 @@ pegar.addEventListener('click', function (){
 }
 newPalavra('Sexta-Feira');
 // Exercicio 05
+function colorFriday(){
+    let achar = document.getElementById('btn-friday');
+    let achar1 = document.getElementsByClassName('friday');
+    let string = 'SEXTOU!';
+  achar.addEventListener('click', function (){
+        for(let newGlob = 0; newGlob < achar1.length; newGlob +=1){
+          let guardar = achar1[newGlob];
+          if(guardar.innerHTML === string){
+            guardar.innerHTML = guardar;
+          }else{
+              guardar.innerHTML = string;
+          }
+        }
+    });
+    }
+    colorFriday();
+    // Exercicio 06
+    let dias = document.getElementById('days');
+    function aumentarZoom(){
+    dias.addEventListener('mouseover', function(){
+        event.target.style.fontSize = '30px'
+        event.target.style.fontWeight = '600'
+    });
+    }
+    aumentarZoom();
+    function diminuirZoom(){
+        dias.addEventListener('mouseout', function(){
+            event.target.style.fontSize = '20px'
+            event.target.style.fontWeight = '200';
+        });
+    }
+    diminuirZoom();
+    // Exercicio 07
+    
