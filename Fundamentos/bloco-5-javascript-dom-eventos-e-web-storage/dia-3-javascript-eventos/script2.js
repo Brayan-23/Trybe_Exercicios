@@ -111,4 +111,26 @@ function colorFriday(){
     }
     diminuirZoom();
     // Exercicio 07
-    
+    function actions(tarefa){
+        let elementCriado = document.createElement('span');
+        let addOnde = document.getElementsByClassName('my-tasks')[0];
+        elementCriado.innerText = tarefa;
+        addOnde.appendChild(elementCriado);
+    }
+actions('Lavar o banheiro');
+//Exercicio 08
+function addColor(cor){
+    let addOnde = document.getElementsByClassName('my-tasks')[0];
+    let cria = document.createElement('div');
+    cria.className = 'task';
+    cria.style.backgroundColor = cor;
+    addOnde.appendChild(cria);
+}
+addColor('pink');
+// Exercicio 09
+function mudar(){
+let cor = document.getElementsByClassName('task')[0];
+cor.addEventListener('click',function(){
+    event.target.className = 'task selected';
+});
+}
