@@ -6,7 +6,7 @@ function backColor (){
     botaoAtu.addEventListener('click', () => {
         let corpo = document.querySelector('body');
         if(caixaEscrita.value !== cor ){
-            corpo.style.backgroundColor = caixaEscrita.value
+            corpo.style.backgroundColor = caixaEscrita.value;
         }else{
             corpo.style.backgroundColor = cor; 
         } 
