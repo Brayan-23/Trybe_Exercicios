@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6.1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Header da Página</h1>
+    </header>
+    <form action="" method="post" id="formulario">
+    <div class="caixas">
+        <label for="nome-completed"> Nome:
+        <input type="text" id="nome-completed" min="10" max="40" placeholder="Digite seu nome">
+        </label>
+        <br>
+        <label for="e-mail"> 
+           E-mail: <input type="email" id="e-mail" placeholder="Digite seu e-mail" min="10" max="40">
+        </label>
+    </div>
+    <div class="caixas">
+        <label for="option1">
+            <input type="radio" id="option1" name="opçoes" > Cidade
+        </label>
+        <label for="option2">
+            <input type="radio" id="option2" name="opçoes"> Campo
+        </label>
+        <label for="option3">
+            <input type="radio" id="option3" name="opçoes"> Praia
+        </label>
+        <label for="option4">
+            <input type="radio" id="option4" name="opçoes"> Montanhas
+        </label>
+        </div>
+        <div class="caixas">
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="caixa-texto" id="box-text" cols="30" rows="10" maxlength="500"></textarea>
+        </div>
+        <div class="caixas">
+            <label for="data"> Data:
+                <input type="date" id="data">
+            </label>
+        </div>
+        <div class="caixas">
+            <label for="concordo1"> 
+            <input type="checkbox" id="concordo1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            </label>
+            <br>
+            <label for="concordo2">
+                <input type="checkbox" id="concordo2" required> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            </label>
+        </div>
+        <button type="submit" id="botao">Enviar!</button>
+        <button id="limpeza">Limpar</button>
+  </form>  
+  <script src="script.js"></script>
+</body>
+</html>
