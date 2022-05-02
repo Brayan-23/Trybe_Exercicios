@@ -1,5 +1,5 @@
 const pegaBotao = document.getElementById('botao');
-pegaBotao.addEventListener('click',tirarEfeito);
+pegaBotao.addEventListener('click', tirarEfeito);
 function tirarEfeito(){
     event.preventDefault();
 }
