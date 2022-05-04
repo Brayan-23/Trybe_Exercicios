@@ -31,7 +31,7 @@ ul li{
     font-size: 20px;
     border-radius: 10px;
 }
-h3{
+h2{
     text-align: center;
 }
   @media screen and (max-width: 600px) {
@@ -64,4 +64,36 @@ h3{
       .aside-two ul li{
           background-color: chartreuse;
       }
+  }
+  @media screen  and (min-width: 601px) and (max-width: 900px){
+      header p{
+          font-size: 40px;
+          font-weight: 600;
+      }
+      p{
+          font-size: 25px;
+      }
+      li{
+          font-size: 30px;
+      }
+      ul li {
+          margin-bottom: 20px;
+          padding: 20px;
+      }
+      header, aside{
+        margin-bottom: 20px;
+    }
+      header nav ul li{
+        background-color: rosybrown;
+    }
+    .aside-one ul li{
+        background-color: tomato;
+        
+    }
+    .aside-two ul li{
+        background-color: cadetblue;
+    }
+    h2{
+        font-size: 30px;
+    }
   }
