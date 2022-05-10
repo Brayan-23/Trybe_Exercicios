@@ -82,3 +82,52 @@ const order = {
   }
   
   console.log(orderModifier(order));
+
+
+// Parte 03
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
+};
+
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+const addNewKey = (obj, key, value) => {
+  obj[key] = value;
+};
+
+addNewKey(lesson2, 'turno', 'noite');
+console.log(lesson2);
+const chaves = (keys) =>{
+  Object.keys(keys);
+}
+chaves(lesson1);
+const height = (objeto) =>{
+  const result = Object.keys(objeto).length;
+  return result;
+}
+height(lesson3);
+const values = (valores) =>{
+  const result = Object.values(valores);
+  return result;
+}
+values(lesson1);
+
+const allLessons = {};
+const louco = () =>{
+Object.assign(allLessons.lesson1, lesson1);
+Object.assign(allLessons.lesson2, lesson2);
+Object.assign(allLessons.lesson3, lesson3);
+}
+louco;
