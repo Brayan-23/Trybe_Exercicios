@@ -38,7 +38,27 @@ describe('Testes referentes a função myFizzBuzz', () => {
     it('Vereifica se o número não é divisivel nem 3 ou 5', () => {
         expect(myFizzBuzz(16)).toBe(16);
     });
-    it('Verifica se é um número', () => {
-        expect(myFizzBuzz('5')).toBeFalsy();
-    });
+    
 })
+//Parte 04
+const {encode, decode} = require('/home/brayan/Projetos/sd-022-b-project-playground-functions/src/challenges.js')
+
+describe('Testando as funções encode e decode do projeto Playground Functions', () => {
+    it('Verifica se existe uma função declarada', () => {
+        expect(encode).toBeDefined();
+        expect(decode).toBeDefined();
+    });
+    it('Verifica "AEIOU" retorna "12345"', () => {
+        expect(encode('aeiou')).toBe('12345');
+    });
+    it('Verifica "12345" retorna "aeiou"', () => {
+        expect(decode('12345')).toBe('aeiou');
+    });
+    it('Verifica se as consoantes não se alteram', () => {
+        expect(encode('scdfrgt')).toBe('scdfrgt');
+        expect(decode('67890')).toBe('67890');
+    });
+    it('Verifica se retorna a mesma quantidade de caracteres', () => {
+        expect(encode('estranho').length).toBe(8);
+    })
+});
