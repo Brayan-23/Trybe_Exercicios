@@ -22,3 +22,24 @@ const creatSorteio = (myNumber, action) => {
     const number = Math.floor(Math.random() * 5) + 1;
     return action(myNumber, number) ? 'Parabens você ganhou' : 'Tente Novamente';
 }
+// Parte 03
+const checagem = (box, verific) => {
+    if(box === verific){
+       return 1
+    } if(verific === 'N.A'){
+        return 0;
+    }
+ return -0,5;
+};
+
+const resultado = (box, verific, action) => {
+let result = 0;
+for(let i = 0; i < box.length; i += 1){
+    const test = action(box[i], verific[i])
+    result += test;
+}
+return `Você obteve ${result}`;
+}
+
+
+
