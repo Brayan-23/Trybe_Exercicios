@@ -16,3 +16,9 @@ const newEmployees = () => {
     }
     return pegaobj;
   };
+// Parte 02
+const result = (numero, sort) => numero === sort;
+const creatSorteio = (myNumber, action) => {
+    const number = Math.floor(Math.random() * 5) + 1;
+    return action(myNumber, number) ? 'Parabens você ganhou' : 'Tente Novamente';
+}
