@@ -63,3 +63,9 @@ const books = [
   
 const authorBooks = (arr) =>  arr.map((elemento) =>`${elemento.name} - ${elemento.genre} - ${elemento.author.name}`);
 console.log(authorBooks(books));
+
+
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+const result = () => numbers.reduce((elemento, iterar) => (iterar % 2 === 0) ? elemento + iterar : elemento);
+console.log(result());
+
