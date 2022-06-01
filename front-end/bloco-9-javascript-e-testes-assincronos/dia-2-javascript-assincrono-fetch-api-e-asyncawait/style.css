@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#nada {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+#nada li {
+    margin-bottom: 10px;
+}
