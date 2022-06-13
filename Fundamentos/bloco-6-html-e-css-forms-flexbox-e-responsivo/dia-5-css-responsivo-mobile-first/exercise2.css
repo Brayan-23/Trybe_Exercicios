@@ -1,0 +1,213 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-inverno-com-cores-legais_23-2148721034.jpg?w=1380');
+    background-size: cover;
+}
+
+p {
+    font-weight: 200;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    width: 80%;
+    margin: 50px auto 50px auto;
+}
+
+b {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    header p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 15px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: underline;
+        font-size: 15px;
+    }
+
+    .aside-one ul li{
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        background-color: azure;
+        width: 60%;
+        margin: 10px auto;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .aside-two ul{
+        background-color: azure;
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+    .aside-two ul li{
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 22px ;
+    }
+    .main-content{
+        background-color: azure;
+        padding: 10px;
+        margin: auto;
+        width: 90%;
+    }
+    footer{
+        background-color: azure;
+        margin: auto;
+        padding: 10px;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    header p {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: underline;
+    }
+
+    .aside-one ul {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .aside-one ul li {
+        font-size: 25px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        background-color: azure;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .aside-two {
+        background-color: azure;
+        width: 80%;
+        margin: auto auto 50px auto;
+    }
+
+    .aside-two ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .main-content {
+        margin: auto;
+        background-color: azure;
+        width: 80%;
+        padding: 30px;
+    }
+
+    footer {
+        background-color: azure;
+        width: 80%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+    @media screen and (min-width:1001px) {
+        header p {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            text-decoration: underline;
+        }
+
+        .aside-one ul {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .aside-one ul li {
+            font-size: 25px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            background-color: azure;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .aside-two {
+            background-color: azure;
+            width: 80%;
+            margin: auto auto 50px auto;
+        }
+
+        .aside-two ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .aside-two ul li {
+            font-size: 20px;
+        }
+
+        .main-content {
+            margin: auto;
+            background-color: azure;
+            width: 80%;
+            padding: 50px;
+        }
+
+        footer {
+            background-color: azure;
+            width: 80%;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
