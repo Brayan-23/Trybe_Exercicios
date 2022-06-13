@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        // Requisito 01
+      let corpo = document.querySelector('body');
+      let criar = document.createElement('h1');
+      criar.innerText = 'Exercício 5.2 - JavaScript DOM'
+    corpo.appendChild(criar);
+     //Requisito 02
+     let criar1 = document.createElement('main');
+     criar1.className = "main-content"
+     corpo.appendChild(criar1);
+        //Requisito 03
+        let criar2 = document.createElement('section');
+        criar2.className ='center-content';
+        criar1.appendChild(criar2);
+        // Requisito 04
+        let criar3 = document.createElement('p');
+        criar3.innerText = "Resolvendo o exercicio do dia 5.2."
+        criar2.appendChild(criar3);
+        // Requisito 05
+        let criar4 =document.createElement('section');
+        criar4.className = 'left-content';
+        criar1.appendChild(criar4);
+        // Requisito 06
+        let criar5 =document.createElement('section');
+        criar5.className = 'right-content';
+        criar1.appendChild(criar5);
+        // Requisito 07
+        let criar6 = document.createElement('img');
+        criar6.src = 'https://picsum.photos/200';
+        criar6.className = 'small-image';
+        criar5.appendChild(criar6);
+        // Requisito 08
+        let array = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        let criar7 =document.createElement('ul');
+        criar5.appendChild(criar7);
+        for(let coisa in array){
+            let criarLi = document.createElement('li');
+            criarLi.innerHTML = array[coisa];
+            criar7.appendChild(criarLi);
+        }
+        // Exercicio 09
+        for(i = 0; i < 3; i += 1){
+        let criar8 = document.createElement('h3')
+        criar1.appendChild(criar8);
+        }
+        // NewReq 01
+        let newCO = document.querySelector('h1');
+        newCO.className = 'title';
+        // NewReq 02
+        let newCO1 = document.querySelectorAll('h3');
+        for(let nova in newCO1){
+            newCO1[nova].className = 'description';
+        }
+        // NewReq 03
+        let secao = document.getElementsByClassName('left-content')[0];
+        criar1.removeChild(secao);
+        // NewReq 04
+        let secao1 = document.getElementsByClassName('right-content')[0];
+        secao1.style.marginRight = 'auto';
+        // NewReq 05
+        let secao2 = document.getElementsByClassName('center-content')[0];
+        secao2.style.background = 'green';
+        // NewReq 06
+        let order = document.querySelectorAll('ul')[0];
+        let end = document.getElementsByTagName('li');
+        for(let ova = 0; ova < end.length; ova += 1){
+            let adiciona = end[ova];
+            if(adiciona.innerHTML.includes('nove') || adiciona.innerHTML.includes('dez')){
+                order.removeChild(adiciona);
+            }
+            }
+        
+        
+        
+
+    </script>
+  </body>
+</html>
