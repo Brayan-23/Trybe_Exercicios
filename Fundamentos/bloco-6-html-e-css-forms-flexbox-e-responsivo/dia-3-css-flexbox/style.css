@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.acima{
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#botao{
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 1000px;
+    margin: 0 auto; 
+    align-content: center;
+}
+h2{
+    text-align: center;
+}
+.imagem{
+    height: 220px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color:#f0f7da;
+}
+.coisas{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.fim{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 400px;
+    margin: auto;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+}
+.sociais{
+    display: flex;
+    justify-content: center;
+}
+#instagram{
+    margin-right: 10px;
+}
