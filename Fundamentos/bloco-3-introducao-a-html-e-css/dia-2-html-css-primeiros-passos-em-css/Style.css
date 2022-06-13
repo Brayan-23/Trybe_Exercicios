@@ -1,0 +1,18 @@
+h1{
+    font-size: 65px; color: red; font-family: sans-serif;
+}
+ul{
+    background-color: aquamarine; line-height: 30px; text-align: center; ;
+}
+.colores{
+    background-color: bisque;
+}
+p{
+     font-size: 3em; text-decoration: none;
+}
+body{
+    font-size: 16px; font-style: italic;
+}
+#amarelo{background-color: yellow; }
+#vermelho{background-color: red;}
+#marrom{background-color: brown;}
