@@ -1,0 +1,33 @@
+#cabeca {
+    text-align: center;
+}
+#bdImagem{
+    text-align: center;
+}
+#secaoBotao{
+    text-align: center;
+    margin-top: 20px;
+}
+#input{
+    display:block;
+    margin: auto;
+    width: 50%;
+    height: 30px;
+}
+#botao{
+    margin-top: 20px;
+    text-align: center;
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#principal{
+    text-align: center;
+}
+#texto{
+    width: 40%;
+    margin: auto;
+    line-height: 30px;
+    font-size: 20px;
+}

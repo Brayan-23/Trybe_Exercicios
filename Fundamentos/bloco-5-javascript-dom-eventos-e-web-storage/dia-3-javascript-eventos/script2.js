@@ -85,15 +85,16 @@ function colorFriday(){
   achar.addEventListener('click', function (){
         for(let newGlob = 0; newGlob < achar1.length; newGlob +=1){
           let guardar = achar1[newGlob];
-          if(guardar.innerHTML === string){
-            guardar.innerHTML = guardar;
+          if(guardar.innerHTML !== string){
+            guardar.innerHTML = string;
           }else{
-              guardar.innerHTML = string;
+              guardar.innerHTML = dezFridays[newGlob];
           }
         }
     });
     }
-    colorFriday();
+    let dezFridays = [ 4, 11, 18, 25 ];
+    colorFriday(dezFridays);
     // Exercicio 06
     let dias = document.getElementById('days');
     function aumentarZoom(){
@@ -134,3 +135,17 @@ cor.addEventListener('click',function(){
     event.target.className = 'task selected';
 });
 }
+// Exercicio 10
+function numberColor (){
+    let originColor = 'rgb(119,119,119)'
+    let colors = 'pink'
+    let dia = document.getElementById('days');
+    dia.addEventListener('click', function(){
+        if(event.target.style.color === colors){
+            event.target.style.color = originColor;
+        }else{
+            event.target.style.color = colors;
+        }
+    });
+}
+numberColor();
