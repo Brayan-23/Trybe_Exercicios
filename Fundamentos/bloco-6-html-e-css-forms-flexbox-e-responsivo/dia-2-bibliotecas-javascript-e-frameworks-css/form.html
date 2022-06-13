@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 6.1</title>
     <link rel="stylesheet" href="bulma/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
 </head>
 <body>
     <header>
@@ -41,7 +43,7 @@
         </div>
         <div class="field">
             <label for="data"> Data:
-                <input type="date" id="data">
+                <input type="text" id="data">
             </label>
         </div>
         <div class="field">
@@ -56,6 +58,10 @@
         <button type="submit" id="botao" class="button is-danger is-light">Enviar!</button>
         <button id="limpeza" class="button is-light">Limpar</button>
   </form>  
+  <script src="pikaday.js"></script>
+<script>
+    var picker = new Pikaday({ field: document.getElementById('data') });
+</script>
   <script src="script.js"></script>
 </body>
 </html>

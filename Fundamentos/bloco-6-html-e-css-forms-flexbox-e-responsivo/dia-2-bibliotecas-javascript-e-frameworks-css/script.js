@@ -18,3 +18,8 @@ function limpaCampos(){
         }
     }
 }
+
+
+import JustValidate from 'just-validate';
+
+const validate = new JustValidate('#form');
