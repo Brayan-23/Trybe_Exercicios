@@ -1,0 +1,31 @@
+body{
+    background-image: url('https://guikao.files.wordpress.com/2012/01/pokemon_wallpaper01_1680.jpg');
+    background-size: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: underline;
+}
+p{
+    font-size: 25px;
+    font-weight: 800;
+}
+.list-pokemons{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+img {
+    width: 300px;
+}
+.pokemons{
+    width: 40%;
+    margin: 15px;
+    text-align: center;
+}
