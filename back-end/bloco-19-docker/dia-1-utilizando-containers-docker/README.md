@@ -1,0 +1,1 @@
+Hoje foi um dia muito interessante onde pude aprender e praticar uma nova ferramenta, chamada Docker. Observei uma facilidade imensa onde não preciso me preocupar com versionamento de aplicações, ou seja, o que funciona na minha máquina também funionará na máquina dos outros e isso é muito legal, recomendo demais essa tecnologia e VQV aprender cada vez mais. #foguetesemré
