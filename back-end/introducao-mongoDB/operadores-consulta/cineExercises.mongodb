@@ -1,0 +1,116 @@
+//Exercise 01
+use('cinema')
+db.filmes.updateOne({
+    title: 'Batman'
+}, {
+    $set: {imdbRating: 7.7}
+});
+db.filmes.find().pretty();
+
+//Exercise 02
+use('cinema')
+db.filmes.updateOne({
+    title: 'Godzilla'
+}, {
+    $set: {budget: 1}
+});
+db.filmes.find().pretty();
+
+//Exercise 03
+use('cinema')
+db.filmes.updateOne({
+    title: 'Home Alone'
+}, {
+    $set: {imdbRating: 5.5, budget: 15}
+});
+db.filmes.find().pretty();
+
+//Exercise 04
+use('cinema')
+db.filmes.updateOne({
+    title: 'Batman'
+}, {
+    $inc: {imdbRating: 2}
+});
+db.filmes.find().pretty();
+
+//Exercise 05
+use('cinema')
+db.filmes.updateOne({
+    title: 'Home Alone'
+}, {
+    $inc: {imdbRating: 5}
+});
+db.filmes.find().pretty();
+
+//Exercise 06
+use('cinema')
+db.filmes.updateOne({
+    title: 'Batman'
+}, {
+    $mul: {imdbRating: 4}
+});
+db.filmes.find().pretty();
+
+//Exercise 07
+use('cinema')
+db.filmes.updateOne({
+    title: 'Batman'
+}, {
+    $rename: {budget: 'estimateBudget'}
+});
+db.filmes.find().pretty();
+
+//Exercise 08
+use('cinema')
+db.filmes.updateOne({
+    title: 'Home Alone'
+}, {
+    $min: {budget: 5}
+});
+db.filmes.find().pretty();
+
+//Exercise 09
+use('cinema')
+db.filmes.updateOne({
+    title: 'Godzilla'
+}, {
+    $max: {imdbRating: 8.6},
+    $set: {'category.1': 'thriller'}
+});
+db.filmes.find().pretty();
+
+//Exercise 10
+use('cinema')
+db.filmes.updateOne({
+    title: 'Home Alone'
+}, {
+    $currentDate: {lastUpdated: {$type: 'timestamp'}}
+});
+db.filmes.find().pretty();
+
+//Exercise 11
+use('cinema')
+db.filmes.updateMany(
+{}, {
+    $set: {sequels: 0}
+});
+db.filmes.find().pretty();
+
+//Exercise 12
+use('cinema')
+db.filmes.updateMany(
+{}, {
+    $unset: {estimateBudget: '', budget: ''}
+});
+db.filmes.find().pretty();
+
+//Exercise 13
+use('cinema')
+db.filmes.updateMany({
+    title: {$all: ["Home Alone", 'Batman']}
+}, {
+    $max: {imdbRating: 19}
+});
+db.filmes.find().pretty();
+
