@@ -1,0 +1,92 @@
+// Exercise 01
+use('cinema')
+db.movies.find({
+    category: {$all:['action', 'adventure']}
+});
+// Exercise 02
+use('cinema')
+db.movies.find({
+    category: {$all:['action', 'sci-fi']}, 
+    imdbRating: {$gt: 7}
+});
+// Exercise 03
+use('cinema')
+db.movies.find({
+    ratings: {$gt: 103}
+}, {
+    title: true,
+    ratings: true,
+});
+// Exercise 04
+use('cinema')
+db.movies.find({
+    ratings: {$elemMatch: {$gte: 100, $lte: 105}}
+}, {
+    title: true,
+    ratings: true
+});
+//Exercise 05
+use('cinema')
+db.movies.find({
+    ratings: {$elemMatch: {$gte: 64, $lte: 105, $mod: [9, 0]}},
+}, {
+    title: true,
+    ratings: true
+});
+// Exercise 06
+use('cinema')
+db.movies.find({
+    ratings: {$elemMatch: {$gt: 103}},
+    category: {$all: ['adventure']}
+}, {
+    title: true,
+    ratings: true,
+    category: true
+});
+// Exercise 07
+use('cinema')
+db.movies.find({
+    category: {$size: 2}
+}, {
+    title: true
+});
+// Exercise 08
+use('cinema')
+db.movies.find({
+    ratings: {$size: 4},
+}, {
+    title: true,
+});
+// Exercise 09
+use('cinema')
+db.movies.find({
+   budget: {$mod: [5, 0]},
+   category: {$size: 2}
+});
+// Exercise 10
+use('cinema')
+db.movies.find({
+    $or: [
+   {category: 'sci-fi'},
+   {ratings: {$elemMatch: {$gt: 199}}}
+    ]
+});
+// Exercise 11
+use('cinema')
+db.movies.find({
+    $and: [
+   {ratings: {$size: 4}},
+   {category: {$in: ['adventure', 'family']}},
+   {imdbRating: {$gte: 7}}
+    ] 
+});
+// Exercise 12
+use('cinema')
+db.movies.find({
+   description: {$regex: /^The/}
+});
+// Exercise 13
+use('cinema')
+db.movies.find({
+   description: {$regex: /humanity.$/}
+});
